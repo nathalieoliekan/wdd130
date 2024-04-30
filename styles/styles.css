@@ -43,9 +43,9 @@ aside {
   }
 
 aside h2 {
-    position: absolute;
-    top: 720px;
-    left: 175px;
+    position: relative;
+    top: 35px;
+    left: 10px;
   }
 
 aside img {
@@ -65,7 +65,7 @@ footer {
   margin: 1rem;
   border: 1px solid rgba(0,0,0,.2);
   padding: 1rem;
-  background-color: rgba(183, 203, 204, 0.999);
+  background-color: #DFF0F7;
   color: black;
 }
 
