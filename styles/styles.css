@@ -38,15 +38,16 @@ main {
   }
 
 aside {
-    width: 25em;
-    text-align: center;
-  }
+  position: relative;
+  width: 25em;
+  text-align: center
+}
 
 aside h2 {
-    position: relative;
-    top: 35px;
-    left: 10px;
-  }
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
 
 aside img {
     width: 200px;
