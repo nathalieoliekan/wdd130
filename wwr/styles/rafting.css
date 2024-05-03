@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #233d4d;
+    --secondary-color: #a1c181;
+    --accent1-color: #fcca46;
+    --accent2-color: #a1c181;
+    --accent3-color: #619b8a;
+  
+    --heading-font: 'Open', serif;
+    --paragraph-font: 'Open', sans-serif;
+    --nav-background-color: #5ce1e6;
+  } /* Define colors for page */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  } /* Set h elements font and color */
+
+.social-media-link {
+    text-decoration: none;
+  } /* Removing underlines from social media links */
+  
+body {
+    font-family: var(--paragraph-font);
+    max-width: 800px;
+    padding: 20px;
+  } /* Limiting entire width of the page, add font/padding to body */
+
+.hero {
+    position: relative;
+  } /* make hero class relative position */
+
+h1 {
+    position: absolute;
+    top: 65px;
+    width: 800px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: var(--primary-color);
+    opacity: .8;
+    color: white;
+  } /* define h1 element "company name" */
+
+h2 {
+    color: var(--accent3-color);
+  } /* define color for h2 elements */
+
+article {
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    width: 600px;
+    height: 100px;
+    background-color: var(--accent1-color);
+    opacity: .8;
+    padding: 10px;
+  } /* define article element (mission statement + image within large image) */
+
+.hero article img {
+    float: right;
+    display: block;
+    width: 25%;
+    height: auto;
+  } /* set article image "happy people" to fit inside article and float, 25% article width */
+
+.hero img {
+    float: right;
+    display: block;
+    width: 100%;
+    height: auto;
+  } /* set hero class image "nature" to fit inside hero class div at 100% width */
+
+nav a {
+    text-decoration: none;
+  } /* take off underlining on links for page at top */
+
+nav a:hover {
+    color: var(--accent1-color);
+    background-color: var(--nav-background-color);
+  } /* change color and background color for hovering over links */
+
+nav a:link, nav a:visited {
+    color: var(--primary-color);
+  } /* change color for links, before(link) and after(visited) clicking on them */
