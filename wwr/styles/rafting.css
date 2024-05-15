@@ -4,7 +4,7 @@
     --primary-color: #233d4d;
     --secondary-color: #a1c181;
     --accent1-color: #fcca46;
-    --accent2-color: #a1c181;
+    --accent2-color: #fe7f2d;
     --accent3-color: #619b8a;
   
     --heading-font: 'Open', serif;
@@ -44,9 +44,10 @@ h1 {
 
 h2 {
     color: var(--accent3-color);
+    text-align: center;
   } /* define color for h2 elements */
 
-article {
+.hero article {
     position: absolute;
     top: 150px;
     left: 75px;
@@ -71,15 +72,93 @@ article {
     height: auto;
   } /* set hero class image "nature" to fit inside hero class div at 100% width */
 
-nav a {
-    text-decoration: none;
-  } /* take off underlining on links for page at top */
+header nav{
+    display: flex;
+    flex-direction: row;
+}
 
-nav a:hover {
-    color: var(--accent1-color);
-    background-color: var(--nav-background-color);
-  } /* change color and background color for hovering over links */
+header nav a {
+  display: block;
+  text-decoration: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  background-color: var(--primary-color);
+  font-size: .8rem;
+  font-weight: 700;
+}
 
-nav a:link, nav a:visited {
-    color: var(--primary-color);
-  } /* change color for links, before(link) and after(visited) clicking on them */
+header nav a:hover {
+  background-color: var(--nav-background-color);
+  font-weight: 700;
+}
+
+header nav a:link, nav a:visited {
+  color: white;
+} /* change color for links, before(link) and after(visited) clicking on them */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: var(--secondary-color);
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 1rem;
+}
+
+.figures figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-height: 150px;
+  margin: auto;
+}
+
+.figures figcaption {
+  background-color: #222;
+  color: #fff;
+  font: .7rem sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+footer {
+  border-top: solid 2px black;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 68% 32%;
+  padding: .5rem;
+}
+
+footer nav {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+footer nav a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+footer p {
+  justify-self: flex-end;
+  align-self: center;
+  font-size: .75rem;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.history p {
+  text-align: justify;
+}
