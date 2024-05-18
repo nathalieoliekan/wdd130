@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Week05 Assignment - Quiz Form">
+        <meta name="author" content="Nathalie Oliekan">
+        <title>WDD 130 | HTML Form - User Poll</title>
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>WDD 130 | Nathalie Oliekan | Basic HTML and CSS Quiz</h1>
+        </header>
+
+        <main>
+            <form>
+                <fieldset>
+                    <div class="questions">
+                        <h2>1.</h2>
+                        <label for="q1">Define what HTML stands for?</label>
+                        <input type="text" id="q1" name="q1">
+                    </div>
+                    <div class="questions">
+                        <h2>2.</h2>
+                        <label for="q2">What are the differences between "Flex" and "Grid" styling?</label>
+                        <textarea id="q2" name="q2" rows="4"></textarea>
+                    </div>
+                    <div class="questions">
+                        <h2>3.</h2>
+                        <label for="q3">Which CSS declaration goes around the padding and separates the padding from the margin</label>
+                        <select id="q3" name="q3">
+                            <option value="" selected disabled>Choose One ...</option>
+                            <option value="option1">border</option>
+                            <option value="option2">gap</option>
+                            <option value="option3">content</option>
+                            <option value="option4">gutter</option>
+                        </select>
+                    </div>
+                    <div class="questions">
+                        <h2>4.</h2>
+                        <label for="q4">What is the box-model total width if the content has a width of 200px, the border has a width 
+                            of 2px, and the padding and margin are each 10px all around?</label>
+                        <input type="number" id="q4" name="q4">
+                    </div>
+                </fieldset>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>©2024 | Basic HTML and CSS Quiz | Nathalie Oliekan</p>
+        </footer>
+    </body>
+</html>

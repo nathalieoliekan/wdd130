@@ -92,4 +92,8 @@ main {
   color: black;
 }
 
-
+.ul {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 2rem;
+}
