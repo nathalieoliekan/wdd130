@@ -85,7 +85,7 @@ footer {
     padding-top: 1rem;
   }
 
-.questions h2 {
+h2 {
     grid-column: 1/2;
     color: blue;
     align-self: start;
