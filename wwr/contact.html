@@ -41,24 +41,31 @@
       <form>
         <fieldset>
           <legend>Message Our Team</legend>
-          
-          <div>
-            <div class="radio">
-              <input type="radio" id="general" name="option1" value="general" checked>
-              <label for="general">General Inquiry</label>
+          <div class="questions">
+            <div>
+              <div class="radio">
+                <input type="radio" id="general" name="option1" value="general" checked>
+                <label for="general">General Inquiry</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="reserve" name="option2" value="reserve">
+                <label for="reserve">Reservation Question</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="web" name="option3" value="web">
+                <label for="web">Website Question</label>
+              </div>
             </div>
-            <div class="radio">
-              <input type="radio" id="reserve" name="option2" value="reserve">
-              <label for="reserve">Reservation Question</label>
-            </div>
-            <div class="radio">
-              <input type="radio" id="web" name="option3" value="web">
-              <label for="web">Website Question</label>
+              <div class="name namegrid">
+                <input type="text" id="name" name="name">
+                <label for="name">Full Name</label>
+              </div>
+              <div class="email emailgrid">
+                <input type="text" id="email" name="email">
+                <label for="email">Email</label>
+              </div>
             </div>
           </div>
-
-          <input type="text" id="name" name="name" placeholder="Full Name">
-          <input type="text" id="email" name="email" placeholder="Email Address">
           <textarea id="q2" name="q2" rows="4" placeholder="Message"></textarea>
 
           <div class="check">
