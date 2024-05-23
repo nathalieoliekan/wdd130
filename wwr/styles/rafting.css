@@ -173,7 +173,6 @@ footer p {
 } /* make hero class relative position */
 
 .hero2 img {
-  float: center;
   width: 100%;
   height: auto;
   margin-top: 10px;
