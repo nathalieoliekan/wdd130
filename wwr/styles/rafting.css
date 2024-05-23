@@ -135,15 +135,16 @@ footer {
   margin-top: 10px;
   display: grid;
   grid-template-columns: 68% 32%;
+  grid-template-rows: 1fr 0.5fr;
   padding: .5rem;
 }
 
-footer nav {
+.sociallinks {
   justify-self: flex-end;
   align-self: center;
 }
 
-footer nav a {
+.sociallinks a {
   padding: 10px;
   text-decoration: none;
 }
@@ -161,4 +162,146 @@ footer p {
 
 .history p {
   text-align: justify;
+} 
+
+/* ------------------------------------------------------------------------------ */
+/* Contact Us Page */
+
+.hero2 {
+  position: relative;
+  padding-top: 20px;
+} /* make hero class relative position */
+
+.hero2 img {
+  float: center;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.hero2 h1 {
+  position: absolute;
+  top: 110px;
+  left: 380px;
+  width: 350px;
+  text-align: center;
+  font-size: 3rem;
+  background-color: var(--primary-color);
+  opacity: .8;
+  color: white;
+} /* define h1 element "company name" */
+
+.employees {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.employees figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: 0px;
+  align-items: center;
+}
+
+.employees figcaption {
+  background-color: var(--primary-color);
+  color: white;
+  font: .7rem sans-serif;
+  padding: 0px;
+  text-align: center;
+  width: 220px;
+}
+
+button {
+  margin: 1rem;
+  background-color: #dff000;
+  color: black;
+  border: none;
+  border-radius: .5rem;
+  padding: .25rem;
+  font-size: .75rem;
+  justify-self: center;
+  width: 100px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: .5rem;
+  border: 0px;
+  padding: .5rem;
+}
+
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+form {
+  width: 800px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  display: grid;
+  color: white
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.info {
+  align-self: end;
+  padding-bottom: 0;
+  margin: 10px;
+}
+
+.info p {
+  font-size: .85rem;
+}
+
+.info h2 {
+  text-align: left;
+}
+
+fieldset legend {
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+fieldset p {
+  color: white;
+}
+
+.radio {
+  padding-bottom: 10px;
+}
+
+.map {
+  align-self: center;
+}
+
+footer ol {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+footer ol li a {
+  font-size: 0.75rem;
+}
+
+footer ol li::marker {
+  content: ' ';
+  font-size: 1.2em;
 }
